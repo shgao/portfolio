@@ -1,0 +1,83 @@
+/* imports font */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic);
+
+body {
+	font-family: Lato, Helvetica Neue, Helvetica, sans-serif;
+}
+
+div {
+	clear: both;
+}
+
+img {
+	border-left: 10px black solid;
+	border-right: 10px black solid;
+	float: left;
+	margin: 5px;
+	margin-bottom: 30px;
+	width: 225px;
+}
+
+img:hover {
+	border-color: #888;
+}
+
+.nav, .nav:hover {
+	color: white;
+	letter-spacing: -2px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.nav:hover {
+	color: #ccc;
+}
+
+#content {
+	left: 6em;
+	position: relative;
+	z-index: 0;
+}
+
+#header {
+	background-color: #000;
+	font-size: 22px;
+	padding-top: 15%;
+	position: fixed;
+	text-align: left;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	width: 5em;
+	z-index: 1;
+}
+
+/* CSS that changes when the screen is larger than 768px */
+@media screen and (max-width: 768px) {
+	img {
+		float: none;
+		margin-bottom: 5px;
+		width: 100%;
+	}
+
+	#content {
+		left: auto;
+		top: 2em;
+	}
+
+	#header {
+		font-size: 16px;
+		padding-top: .2em;
+		position: fixed;
+		text-align: center;
+		height: auto;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+	}
+
+	.nav, .nav:hover {
+		display: inline-block;
+	}
+}

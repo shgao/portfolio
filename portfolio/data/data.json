@@ -1,0 +1,4 @@
+[{"Title":"Dawg Coffee","Description":"Web and mobile friendly site for a fictitious coffee shop","Link":"dawg-coffee","Image":"img/1.png","Languages":"HTML, CSS"},
+{"Title":"Police Shootings","Description":"Use Leaflet.js to create an interactive map of crowd sourced police shooting data","Link":"police-shootings","Image":"img/2.png","Languages":"HTML, CSS, JavaScript"},
+{"Title":"Oompa Loompa Review","Description":"Use the Parse engine to store user interaction for reviews on Oompa Loompas","Link":"crud-app","Image":"img/3.png","Languages":"HTML, CSS, JavaScript, jQuery"},
+{"Title":"Spotify App","Description":"Angular application that uses data from the Spotify API","Link":"spotify-template","Image":"img/4.png","Languages":"HTML, CSS, JavaScript"}]
