@@ -2,6 +2,14 @@ body{
 	font-family: Arial;
 	font-size: 11px;
 	margin: 0px;
+	background-image: url('../img/letmelivedeepwhileilive.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+form {
+	margin: 15px;
 }
 
 h1 {
@@ -25,7 +33,11 @@ ul {
 	padding-left: 15px;
 }
 
-.nav {
+a {
+	color:white;
+}
+
+.nav, .nav:visited {
 	color: white;
 	display: inline-block;
 	font-size: 24px;
@@ -35,14 +47,14 @@ ul {
 	text-transform: uppercase;
 }
 
-.nav:hover {
+.nav:active, .nav:hover {
 	background-color: black;
 	color: white;
 	text-decoration: none;
 }
 
 .sidebar {
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 
@@ -50,15 +62,25 @@ ul {
 	text-decoration: underline;
 }
 
+.threadList {
+	text-align:left;
+}
+
 #center {
-	background-color: green;
+	display: inline-block;
+	margin-top: 0px;
+	position: relative;
 	width: 764px;
+}
+
+#center, #head, #left, #nav, #right, #titleleft, #titleright {
+	background-color: #292929;
 }
 
 #center, #left {
 	float: left;
 	margin-bottom: 5px;
-	margin-right: 5px;
+	margin-right: 6px;
 }
 
 #footer {
@@ -67,7 +89,9 @@ ul {
 }
 
 #head {
-	background-color: red;
+	background-image: url('http://gamer.ischool.uw.edu/wp-content/cache/image/static/153e54cba6f6c145fa30e635b04992f8.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 	height: 135px;
 	margin-bottom: 5px;
 }
@@ -78,20 +102,112 @@ ul {
 	width: 1214px;
 }
 
-#left {
-	background-color: yellow;
+#left, #right {
+	position: relative;
 	width: 219px;
+	z-index: 0;
+}
+
+#login {
+	cursor: pointer;
 }
 
 #nav {
-	background-color: orange;
 	margin-bottom: 5px;
 	text-align: center;
 }
 
 #right {
-	background-color: blue;
 	display: inline-block;
+	float: left;
 	margin-bottom: 5px;
-	width: 219px;
+}
+
+#stuff {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+}
+
+#titleleft, #titleright {
+	display: none;
+}
+
+#leftInline {
+	text-align: left;
+}
+
+#rightInline {
+	text-align: right;
+}
+
+#centerTitle {
+	color: white;
+	margin: auto;
+	width:50%;
+	text-align: center;
+}
+
+/* CSS that changes when the screen is smaller than 1230px */
+@media screen and (max-width: 1230px) {
+	#center {
+		width: 655px;
+	}
+
+	#center, #left {
+		margin-right: 5px;
+	}
+
+	#footer, #head, #main, #nav {
+		width: 1005px;
+	}
+
+	#left, #right {
+		width: 170px;
+	}
+}
+
+/* CSS that changes when the screen is smaller than 1024px */
+@media screen and (max-width: 1024px) {
+	h1{
+		font-size: 24px;
+		padding: 5px;
+	}
+
+	#center, #footer, #head, #main, #nav {
+		width: 100%;
+	}
+
+	#left, #right, #titleleft, #titleright {
+		width: 49%;
+	}
+
+	#leftbar, #rightbar {
+		display: none;
+	}
+
+	#left, #right, #titleright {
+		position: absolute;
+	}
+
+	#right {
+		margin-top: 35px;
+	}
+
+	#right, #titleright {
+		right: 0px;
+	}
+
+	#titleleft, #titleright {
+		display: inline-block;
+		height: 30px;
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+	
+	#titleleft:hover, #titleright:hover {
+		cursor: pointer;
+	}
 }
